@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省市县选择案例</title>
+    <script src="/static/js/jquery-2.2.1.min.js"></script>
+    <script>
+        $(function () {
+            // 发起一个ajax1请求 /prov，获取所有省级地区的信息
+            // 获取信息用 get， 涉及信息修改用 post
+            $.get('/prov',function (data) {
+                // 回调函数
+            })
+        })
+    </script>
+</head>
+<body>
+<select id="prov">
+    <option>---请选择省---</option>
+</select>
+<select id="city">
+    <option>---请选择市---</option>
+</select>
+<select id="dis">
+    <option>---请选择县---</option>
+</select>
+</body>
+</html>
